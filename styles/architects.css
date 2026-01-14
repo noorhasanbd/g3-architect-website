@@ -173,34 +173,6 @@ main > section{
 .sponsor-companies img{
     filter: grayscale(100%);
 }
-
-@media screen and (max-width: 576px)  {
-
-    .navbar, .nav-links, .teams{
-        flex-direction: column;
-    }
-    
-    .team-img-container, .facts-container{
-        grid-template-columns: 1fr;
-        
-    }
-    .our-features{
-        margin-left: 20px;
-    }
-    .facts-container, .sponsor-companies {
-        justify-items: center;
-        gap: 20px;
-    }
-
-    .sponsor-companies{
-        grid-template-columns: repeat(2,1fr);
-        gap: 50px;
-    }
-
-    
-    
-    
-}
 /* features section */
 .features{
     gap: 140px;
@@ -223,9 +195,73 @@ main > section{
 
 
 }
+#experience-badge{
+    padding: 45px 42px;
+    margin-left: -100px;
+    margin-top: -92px;
+}
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+
+}
+#experience{
+    font-size: 1.28rem;
+    font-weight: 600;
+}
+.footer{
+    margin-top: 130px;
+    text-align: center;
+    background-color: #FFF4E7;
+    padding: 38px;
+
+    
+}
+
+
+@media screen and (max-width: 576px)  {
+
+    .navbar, 
+    .nav-links, 
+    .features,
+    .teams
+    {
+        flex-direction: column;
+    }
+    
+    .team-img-container, .facts-container{
+        grid-template-columns: 1fr;
+        
+    }
+    .our-features{
+        margin-left: 20px;
+    }
+    .facts-container, .sponsor-companies {
+        justify-items: center;
+        gap: 20px;
+    }
+
+    .sponsor-companies{
+        grid-template-columns: repeat(2,1fr);
+        gap: 50px;
+    }
+    .feature-architect img{
+        width: 100%;
+
+    }
+    #experience-badge{
+    padding: 45px 42px;
+    margin-left: 20px;
+    margin-top: 20px;
+    }
+
+    
+    
+    
+}
 
 @media screen and (min-width: 576px) and (max-width:992px){
-    .teams {
+    .teams, .features {
         flex-direction: column;
 
     }
@@ -237,6 +273,11 @@ main > section{
          grid-template-columns: repeat(2,1fr);
          gap: 50px;
          justify-items: center;
+    }
+    #experience-badge{
+    padding: 45px 42px;
+    margin-left: 20px;
+    margin-top: 20px;
     }
     
 }
